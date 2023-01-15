@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>
+						we are growing
+				</title>
+				<link rel="icon" type="image/x-icon" href="sr.ico" />
+				<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+				<style>
+						*{
+							margin: 0px;
+							padding: 0px;
+						}
+						body{
+							font-family: 'Open Sans', sans-serif;
+						}
+						:root{
+							--primary: #181449;
+							--secondary: #fff;
+							--tursory: #e9e8ee;
+							--font-primary: #181449;
+							--font-secondary: #fff;
+							--font-tursory:#000;
+						}
+						.main-container{
+							width:90%;
+							margin:0px auto;
+							border:0px solid black;
+						}
+						.main-wrapper{
+							width:100%;
+						}
+						.display-flex{
+							display:flex;
+						}
+						.header-div{
+							width:100%;
+							padding:10px 0px;
+							background-color:var(--primary);
+							position: fixed;
+							z-index:9;
+						}
+						.logo-part{
+							width:35%;
+							padding:20px 0px;
+							background-image:url(logo.png);
+							background-size:120px 36px;
+							background-repeat:no-repeat;
+						}
+						.header-text-div{
+							width:65%;
+							padding:10px 0px;
+							display:flex;
+							justify-content:flex-end;
+						}
+						.header-text{
+							font-size:15px;
+							color: var(--secondary);
+							margin-right:20px;
+						}
+						.conatiner{
+							width:100%;
+						}
+						.section-1{
+							background-image:url(header-bg.jpg);
+							background-repeat:no-repeat;
+							background-size:100% 100%;
+							padding:97px 0px;
+							background-color: rgba(0, 0, 255, 0.1);
+						}
+						.section-1-div-text{
+							padding:0px 0px;
+						}
+						.hello-text{
+							font-size:30px;
+							font-weight:900;
+							color: var(--secondary);
+						}
+						.heading-text-SR-PRAELIA{
+							font-size:80px;
+							font-weight:800;
+							color: var(--secondary);
+						}
+						.sub-heading{
+							font-size:30px;
+							color: var(--secondary);
+						}
+						.find-more-button{
+							width:10%;
+							padding:12px 34px;
+							border:1px solid white;
+							background-color: var(--primary);
+							border-radius:10px;
+							font-size:18px;
+							font-weight:400;
+							color: var(--secondary);
+							text-align:center;
+							margin:50px 0px 0px;
+						}
+						.anchor-tag{
+							text-decoration:none;
+							color: var(--secondary);
+						}
+						.section-2{
+							width:70%;
+							border-left:8px solid #181346;
+							margin:70px auto;
+							padding:18px 0px;
+							padding-left:30px;
+						}
+						.section-2-body-copy{
+							font-size:24px;
+							font-weight:400;
+							line-height:35px;
+							color: var(--primary);
+						}
+						.section-3{
+							width:100%;
+							padding:30px 0px;
+						}
+						.sub-section-1{
+							width:90%;
+							margin:0px auto;
+							justify-content:space-between;
+						}
+						.grey-section-1{
+							width:28%;
+							padding:15px;
+							background-color:var(--tursory);
+						}
+						.iner-div{
+							width:90%;
+							margin:0px auto;
+						}
+						.grey-div-heading{
+							font-size:30px;
+							font-weight:700;
+							margin-bottom:20px;
+							color: var(--primary);
+						}
+						.grey-div-body-copy{
+							font-size:17.5px;
+							line-height:27px;
+						}
+						.our-project{
+							width:100%;
+							font-size:40px;
+							font-weight:700;
+							color: var(--primary);
+							text-align:center;
+							padding:50px 0px;
+						}
+						.section-4{
+							width:90%;
+							padding:px 0px;
+							margin:0px auto;
+							background-color:var(--tursory);
+						}
+						.image-div{
+							width:40%;
+							padding:30% 0px;
+							background-image:url(image-1.jpg);
+							background-repeat:no-repeat;
+							background-size: 100% 100%;
+						}
+						.number-text-div{
+							width:50%;
+							padding:50px;
+						}
+						.number-1-div{
+							width:100%;
+							padding:10px 0px;
+							margin:10px 0px;
+						}
+						.one-number-text{
+							font-size:60px;
+							font-weight:400;
+							color: var(--primary);
+						}
+						.oil-and-gas{
+							font-size:30px;
+							font-weight:700;
+							color: var(--primary);
+							padding:8px 0px;
+						}
+						.body-copy-text{
+							font-size:18px;
+						}
+						.section-5{
+							width:100%;
+							margin-bottom:75px;
+						}
+						.section-5-iner-div{
+							width:90%;
+							margin:0px auto;
+						}
+						.section-5-sub-div-1{
+							width:25%;
+							padding:20px;
+						}
+						.icon-div{
+							width:100%;
+							margin-bottom:20px;
+						}
+						.section-6{
+							width:100%;
+							background-color:var(--primary);
+							color:var(--secondary);
+							padding:0px 0px;
+						}
+						.section-6-iner-div{
+							width:90%;
+							padding:30px;
+							margin:0px auto;
+						}
+						.our-services-div{
+							width:100%;
+						}
+						.our-services{
+							font-size:40px;
+							color:var(--secondary);
+							font-weight:700;
+							margin-bottom:80px;
+						}
+						.our-vision-div{
+							width:50%;
+							padding:10px;
+							margin-bottom:30px;
+						}
+						.our-vision-heading{
+							font-size:32px;
+							font-weight:700;
+							color:var(--secondary);
+							margin-bottom:20px;
+						}
+						.our-vision-body-copy{
+							font-size:15px;
+							line-height:30px;
+							font-weight:400;
+							color:var(--secondary);
+						}
+						.section-6-iner-div-small{
+							width:80%;
+							border:0px solid black;
+							padding:10px 0px;
+							justify-content:space-between;
+						}
+						.strategic-management-div{
+							width:45%;
+							padding:10px 0px;
+							border:0px solid black;
+						}
+						.strategic-management-text{
+							font-size:25px;
+							font-weight:700;
+							margin-bottom:30px;
+							color:var(--secondary);
+						}
+						.text-icon-div{
+							width:100%;
+							align-items:center;
+							margin-bottom:30px;
+						}
+						.icon-div{
+							width:50px;
+							align-items:center;
+							margin:auto 0px ;
+							margin-right:20px;
+						}
+						.text-icon-div-text{
+							font-size:18px;
+							font-weight:700;
+						}
+						.section-7{
+							width:90%;
+							padding:5px 0px;
+							margin:0px auto;
+						}
+						.section-7-iner-box-1{
+							width:100%;
+							justify-content:space-between;
+							margin-bottom:50px;
+						}
+						.section-7-iner-image-div{
+							width:65%;
+						}
+						.section-7-number-div{
+							width:26%;
+							padding:5px 10px;
+							border:3px solid #181449;
+							padding:22px;
+						}
+						.section-7-number-1{
+							font-size:60px;
+							color:var(--primary);
+							font-weight:400;
+						}
+						.sub-text{
+							font-size:22px;
+							font-weight:700;
+							margin:20px 0px;
+						}
+						.body-copy{
+							font-size:19px;
+							font-weight:400;
+						}
+						.footer-section{
+							width:100%;
+							padding:30px 0px;
+							background-color:var(--primary);
+						}
+						.footer-iner-div{
+							width:90%;
+							padding:5px 0px;
+							margin:0px auto;
+							flex-wrap:wrap;
+						}
+						.footer-logo-section{
+							width:100%;
+							margin-bottom:20px;
+						}
+						.footer-text{
+							font-size:30px;
+							font-weight:700;
+							color:var(--secondary);
+							margin-bottom:20px;
+						}
+						.body-copy-div{
+							width:60%;
+							font-size:12px;
+							color:var(--secondary);
+						}
+						.telto-mailto-div{
+							width:39.5%;
+							justify-content:flex-end;
+							align-items:flex-end;
+							font-size:15px;
+							color:var(--secondary);
+							line-height:40px;
+						}
+						.Terms-and-Conditions-div{
+							width:90%;
+							padding:5px 0px;
+							margin:10px auto;
+							font-size:12px;
+							
+						}
+				</style>
+		</head>
+		<body>
+			<div class="main-wrapper">
+				<header class="header-div display-flex">
+				<main class="main-container display-flex">
+					<div class="logo-part display-flex">
+					
+					</div>
+					<div class="header-text-div">
+						<ul type="none" class="display-flex">
+							<li class="header-text"> <ins> <a href="#" class="anchor-tag"> Home </a> </ins> </li>
+							<li class="header-text"> <a href="#" class="anchor-tag"> contact </a> </li>
+						</ul>
+					</div>
+				</main>
+				</header>
+				<section class="section-1 conatiner">
+				<main class="main-container">
+					<div class="section-1-div-text">
+						<h2 class="hello-text">
+							Hello! Welcome to
+						</h2>
+ 					</div>
+					<div class="heading-text-SR-PRAELIA">
+						<h1> SR PRAELIA </h1>
+					</div>
+					<p class="sub-heading">
+						The bridge between you and your goal
+					</p>
+					<div class="find-more-button">
+						 <a href="#" class="anchor-tag">FIND MORE</a>
+					</div>
+				</main>
+				</section>
+				<section class="section-2">
+					<p class="section-2-body-copy">
+						We provide the best consulting and business solutions with our years of expertise. We believe that our collective knowledge and business integration strategies can provide a transformative solution that is customized according to your needs.
+					</p>	
+				</section>
+				<section class="section-3">
+					<div class="sub-section-1 display-flex">
+						<div class="grey-section-1">
+							<div class="iner-div">
+								<h3 class="grey-div-heading"> 
+									About Us
+								</h3>
+								<p class="grey-div-body-copy">
+									We provide the best consulting and business solutions with our years of expertise. We believe that our collective knowledge and business integration strategies can provide a transformative solution that is customized according to your needs.
+								</p>
+							</div>
+						</div>	
+						<div class="grey-section-1">
+							<div class="iner-div">
+								<h3 class="grey-div-heading"> 
+									Our Services
+								</h3>
+								<p class="grey-div-body-copy">
+									We provide end-to-end client service by adding solutions to your requirements. Our mission is to build a well fortified platform internationally. We offer our clients with comprehensive management consulting services that help them navigate through various challenges and opportunities that they face. Our services include B2B strategy, marketing and business intelligence, supply chain and commercial engagement, operations, digital transformation, and corporate finance.
+								</p>
+							</div>
+						</div>	
+						<div class="grey-section-1">
+							<div class="iner-div">
+								<h3 class="grey-div-heading"> 
+									Our Portfolio
+								</h3>
+								<p class="grey-div-body-copy">
+									We provide the best consulting and business solutions with our years of expertise. We believe that our collective knowledge and business integration strategies can provide a transformative solution that is customized according to your needs.
+								</p>
+							</div>
+						</div>	
+					</div>
+				</section>
+				<div class="our-project">
+					Our Projects
+				</div>
+				<section class="section-4 display-flex">
+					<div class="image-div">
+						
+					</div>
+					<div class="number-text-div">
+						<div class="number-1-div">
+							<h2 class="one-number-text"> 
+								01.
+							</h2>
+							<h4 class="oil-and-gas">
+								OIL AND GAS
+							</h4>
+							<p class="body-copy-text">
+								Partnerd with global client for shipment of oil and gas equipment.
+							</p>
+						</div>
+						<div class="number-1-div">
+							<h2 class="one-number-text"> 
+								02.
+							</h2>
+							<h4 class="oil-and-gas">
+								AGRO
+							</h4>
+							<p class="body-copy-text">
+								Partnered with one of the commodity clients for handling procurement and supply chain of agro commodity.
+							</p>
+						</div>
+						<div class="number-1-div">
+							<h2 class="one-number-text"> 
+								03.
+							</h2>
+							<h4 class="oil-and-gas">
+								PHARMA
+							</h4>
+							<p class="body-copy-text">
+								Partnered with one of the pharma clients internationally for the procurement of medical devices and handling end-to-end commercials and supply chain for medical supplies.
+							</p>
+						</div>
+					</div>
+				</section>
+				<div class="our-project">
+					How We Stand Out
+				</div>
+				<section class="section-5">
+					<div class="section-5-iner-div display-flex">
+						<div class="section-5-sub-div-1">
+							<div class="icon-div">
+								<img src="hand-shak.svg" width="70px" height="70px">
+							</div>
+							<h2 class="grey-div-heading">
+								International Standards
+							</h2>
+							<p class="grey-div-body-copy">
+								We provide international services adhering to the global regulations.
+							</p>
+						</div>
+						<div class="section-5-sub-div-1">
+							<div class="icon-div">
+								<img src="star-in-hand.svg" width="70px" height="68px">
+							</div>
+							<h2 class="grey-div-heading">
+								Our &nbsp &nbsp &nbsp &nbsp Expertise
+							</h2>
+							<p class="grey-div-body-copy">
+								By developing expert strategic alliances globally and locally, we enhance our core competencies and improve our goal.
+							</p>
+						</div>
+						<div class="section-5-sub-div-1">
+							<div class="icon-div">
+								<img src="puzzel.svg" width="70px" height="68px">
+							</div>
+							<h2 class="grey-div-heading">
+								Complex Sollutions
+							</h2>
+							<p class="grey-div-body-copy">
+								Through the use of advanced technology, we have been able to the best possible solutions to meet the needs of our diverse customers.
+							</p>
+						</div>
+						<div class="section-5-sub-div-1">
+							<div class="icon-div">
+								<img src="doller.svg" width="70px" height="68px">
+							</div>
+							<h2 class="grey-div-heading">
+								Flexible Prices
+							</h2>
+							<p class="grey-div-body-copy">
+								Our prices are fair and square. We offer smoothest solutions with feasible price point.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="section-6">
+					<div class="section-6-iner-div">
+						<div class="our-services-div">
+							<p class="our-services">
+								Our Services
+							</p>
+							<div class="our-vision-div">
+							<h3 class="our-vision-heading">
+									OUR VISION
+							</h3>
+							<p class="our-vision-body-copy">
+								To become a leading organization that focuses on the providing the
+								best business strategy solution provider globally.
+							</p>
+							</div>
+						</div>
+						<div class="section-6-iner-div-small display-flex">
+							<div class="strategic-management-div">
+								<h2 class="strategic-management-text">
+									STRATEGIC MANAGEMENT
+								</h2>
+								<div class="text-icon-div display-flex">
+									<div class="icon-div display-flex">
+										<img src="biusness-icon.svg" width="50px" height="50px">
+									</div>
+									<p class="text-icon-div-text">
+										Business Intelligence
+									</p>
+								</div>
+								<div class="text-icon-div display-flex">
+									<div class="icon-div display-flex">
+										<img src="supply-chain.svg" width="50px" height="50px">
+									</div>
+									<p class="text-icon-div-text">
+										Supply chain solutions
+									</p>
+								</div>
+							</div>
+							<div class="strategic-management-div">
+								<h2 class="strategic-management-text">
+									CONSULTING
+								</h2>
+								<div class="text-icon-div display-flex">
+									<div class="icon-div display-flex">
+										<img src="tred.svg" width="50px" height="50px">
+									</div>
+									<p class="text-icon-div-text">
+										International Trade
+									</p>
+								</div>
+								<div class="text-icon-div display-flex">
+									<div class="icon-div display-flex">
+										<img src="Procurement-Services.svg" width="50px" height="50px">
+									</div>
+									<p class="text-icon-div-text">
+										Procurement Services
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="our-project">
+					How We Stand Out
+				</div>
+				<section class="section-7">
+					<div class="section-7-iner-box-1 display-flex">
+						<div class="section-7-iner-image-div">
+							<img src="section-7-image.png" width="100%" height="100%">
+						</div>
+						<div class="section-7-number-div">
+							<h2 class="section-7-number-1">
+								01.
+							</h2>
+							<p class="sub-text">
+								Gathering data
+							</p>
+							<p class="body-copy">
+								We believe in process driven culture in any business scenarios and circumstances.
+							</p>
+						</div>
+					</div>				
+					<div class="section-7-iner-box-1 display-flex">
+						<div class="section-7-number-div">
+							<h2 class="section-7-number-1">
+								02.
+							</h2>
+							<p class="sub-text">
+								Planning
+							</p>
+							<p class="body-copy">
+								Thorough discussion with clients to understand their objectives and cater to their specific needs.
+							</p>
+						</div>
+						<div class="section-7-number-div">
+							<h2 class="section-7-number-1">
+								03.
+							</h2>
+							<p class="sub-text">
+								Implementation
+							</p>
+							<p class="body-copy">
+								Laying out conceivable ideas and executing solutions with variable options.
+							</p>
+						</div>
+						<div class="section-7-number-div">
+							<h2 class="section-7-number-1">
+								04.
+							</h2>
+							<p class="sub-text">
+								Results
+							</p>
+							<p class="body-copy">
+								Meeting ends with the help of the expert-driven team and industry specific knowledge efficiently.
+							</p>
+						</div>
+					</div>				
+				</section>
+				<footer class="footer-section">
+					<div class="footer-iner-div display-flex"> 
+						<div class="footer-logo-section">
+							<a href="#" class="anchor-tag"> <img src="logo-footer.png" width="289px" height="112px"> </a>
+						</div>
+						<div class="body-copy-div">
+							<h2 class="footer-text">
+								You Think We Execute
+							</h2>
+						
+						<p class="">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+						</p>
+						</div>
+						<div class="display-flex telto-mailto-div">
+							<ul type="none">
+								<li> <a href="mailto:prasadbhoite609@gmail.com" class="anchor-tag"> 1083 - 2248808583 </a> </li>
+								<li> <a href="tellto:01 1234567890" class="anchor-tag"> info@srpraelia.com </a> </li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+				<div class="Terms-and-Conditions-div">
+					<p class="">
+						Terms and Conditions  &nbsp &nbsp &nbsp &nbsp ©Copyright SR Praelia 2022
+					</p>
+				</div>
+			</div>
+		</body>
+</html>
